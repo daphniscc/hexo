@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>react学习笔记 | fuckyfff</title>
+  <meta name="author" content="CC">
+  
+  <meta name="description" content="REACT介绍
+学习任何一项新知识、新技能，首先要了解的就是三个W，也就是what、why、how————无数人的经验
+
+
+
+WHAT: React是Facebook内部开源出来的一个前端ui框架，内容本身并不很复杂，前期上手学习的难点主要在于开发环境和react技术体系的搭建与理解
+WHY: 现在">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="react学习笔记"/>
+  <meta property="og:site_name" content="fuckyfff"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="fuckyfff" type="application/atom+xml">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="/css/style.css">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-368771XX-X']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+  <header id="header" class='normal_mode'>
+    <nav id="main-nav">
+  <ul class='container'>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+  </header>
+  <div id="content" class="container">
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+      <time datetime="2018-01-04T09:13:01.000Z"><a href="/2018/01/04/react学习笔记/">Thu, Jan 4 2018, 5:13:01 pm</a></time>
+
+  
+    <h1 class="title">react学习笔记</h1>
+  
+
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/react/">react</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h2 id="REACT介绍"><a href="#REACT介绍" class="headerlink" title="REACT介绍"></a>REACT介绍</h2><blockquote>
+<p>学习任何一项新知识、新技能，首先要了解的就是三个W，也就是what、why、how————无数人的经验</p>
+</blockquote>
+<hr>
+<ul>
+<li><strong>WHAT</strong>: React是Facebook内部开源出来的一个前端ui框架，内容本身并不很复杂，前期上手学习的难点主要在于开发环境和react技术体系的搭建与理解</li>
+<li><strong>WHY</strong>: 现在前端世界可以说是三分天下，它和vue与angula不同在哪里呢？</li>
+<li><ul>
+<li>react 数据单向传输，使用flux架构，不同于后两者使用的mvvm</li>
+</ul>
+</li>
+<li><ul>
+<li>react 使用<strong>jsx</strong>写法，可以理解为<strong>js</strong>包含<strong>html</strong> 其他两个可对应理解为html包含js(个人感觉，不一定对哈)</li>
+</ul>
+</li>
+<li><ul>
+<li>也稍微接触过一点点vue和angular，前期上手难度<strong>vue &lt; react &lt; angular</strong></li>
+</ul>
+</li>
+<li><ul>
+<li>为什么选择学习react呢？主要是近期可能会使用它</li>
+</ul>
+</li>
+<li><strong>HOW</strong>: 那怎么开始上手呢？我的学习习惯是先来个Hello World!(相信很多人都是哈)</li>
+</ul>
+<hr>
+<h2 id="REACT-上手之-Hello-World"><a href="#REACT-上手之-Hello-World" class="headerlink" title="REACT 上手之 Hello World!"></a>REACT 上手之 Hello World!</h2><blockquote>
+<p>既然是写hello world，当然是用简单的方式最好，直接在页面引入所需js文件即可，就像jquery一样</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot; /&gt;</span><br><span class="line">    &lt;title&gt;Hello React!&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;http://facebook.github.io/react/js/react.js&quot;&gt;&lt;/script&gt;// react核心文件</span><br><span class="line">    &lt;script src=&quot;http://facebook.github.io/react/js/react-dom.js&quot;&gt;&lt;/script&gt;//react操作虚拟dom相关方法</span><br><span class="line">    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js&quot;&gt;&lt;/script&gt;//把jsx语法编译成浏览器能识别js语法</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;example&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;script type=&quot;text/babel&quot;&gt;</span><br><span class="line">        var Hello = React.createClass(&#123;</span><br><span class="line">          render: function() &#123;</span><br><span class="line">            return &lt;div&gt;Hello &#123;this.props.name&#125;&lt;/div&gt;;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        ReactDOM.render(</span><br><span class="line">          &lt;Hello name=&quot;World&quot; /&gt;,</span><br><span class="line">          document.getElementById(&apos;example&apos;)</span><br><span class="line">        );</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>直接把上面一段代码拷进html文件，使用浏览器打开即可看到效果，但是实际使用react开发的时候并不会这样写，而是使用<a href="https://note.youdao.com/" target="_blank" rel="noopener">webpack</a>+<a href="https://note.youdao.com/" target="_blank" rel="noopener">babel</a>+<a href="https://note.youdao.com/" target="_blank" rel="noopener">gulp</a>等一系列工具进行管理，这叫做<strong>前端工程化</strong></p>
+</blockquote>
+
+      
+    </div>
+    <footer>
+      
+          
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <span class="jiathis_txt">分享到：</span>
+  <a class="jiathis_button_weixin">微信</a>
+  <a class="jiathis_button_tsina">新浪微博</a>
+  <a class="jiathis_button_renren">人人网</a>
+  <a class="jiathis_button_qzone">QQ空间</a>
+  <a class="jiathis_button_douban">豆瓣</a>
+  <a class="jiathis_button_pocket">Pocket</a>
+  <a href="http://www.jiathis.com/share?uid=901656" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=901656" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+          <div class="clearfix"></div>
+          <nav id="pagination">
+  
+  
+    <a href="/2017/12/25/新建文本文档/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
+  
+  <div class="clearfix"></div>
+</nav>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+      <!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread" data-thread-key="/2018/01/04/react学习笔记/"></div>
+<!-- Duoshuo Comment END -->
+  
+</section>
+
+
+
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div>
+  
+  &copy; 2018 CC
+  
+</div>
+Powered by <a href="http://zespia.tw/hexo/" title="Hexo" target="_blank" rel="noopener">Hexo</a> and <a href="http://pages.github.com/" title="GitHub Pages" target="_blank" rel="noopener">GitHub Pages</a>
+
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        (function(){
+
+            $(window).scroll(function(){
+
+                var scrollTop = $(window).scrollTop();
+                if ( scrollTop >200 ){
+                    $("#main-nav").removeClass('normal_mode').addClass('top_mode');
+                } else{
+                    $("#main-nav").removeClass('top_mode').addClass('normal_mode');
+                }
+
+            });
+
+        })();
+    </script>
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox({
+      'titlePosition': 'inside'
+    });
+  })(jQuery);
+  </script>
+
+
+
+    
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"your_id"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+
+<script type="text/javascript">
+  
+  $(function(){
+
+    $('.title').hover(
+      function() {      
+        $(this).stop().animate(
+          {'marginLeft': '10px'}, 200
+        );   
+      }, 
+      function() {       
+        $(this).stop().animate({'marginLeft': '0px'}, 200);      
+      
+    });   
+
+  });
+
+</script>
+
+
+</body>
+</html>
